@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navidad en Julio 2021!</title>
+	<meta name="author" content="Santiago Méndez">
+	<link rel="shortcut icon" href="images/Cap.ico">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="js/jquery.youtube-background.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+	<div class="everything">
+		<!--<a class="github" href="https://github.com/twinysam/" target="_blank"><img src="images/GitHub-Mark-Light-32px.png" alt="Github icon"></a>-->
+		<div class="overlay">
+			<div class="container">
+				<div class="countdown">
+					<p><a href="https://www.twitch.tv/alexismoyanopuntocom" target="_blank">Alexis Moyano Music Hall</a> presenta:</p>
+					<h1>Navidad en Julio</h1>
+					<p>Cuenta regresiva:</p>
+					<div id="clock">
+						
+					</div>
+					<br>
+					<hr>
+					<p>Playlist navideña:</p>
+					<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Ftwiny%2Fxmas-mix-2008%2F" frameborder="0" ></iframe>
+				</div>
+			</div>
+		</div>
+		
+		<div id="ytbg" data-ytbg-fade-in="true" data-youtube="https://www.youtube.com/watch?v=FjRTbcllmRA"></div>
+	</div>
+	<script src="js/moment.min.js"></script>
+	<script src="js/moment-timezone-with-data.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<!--<script src="js/jquery.mb.YTPlayer.min.js"></script>-->
+	<script>
+		$(document).ready(function () {
+			var navidadJulio = moment.tz("2021-07-20 00:00:00", "America/Argentina/Buenos_Aires");
+
+			$('#clock').countdown(navidadJulio.toDate(), function (event) {
+				$(this).html(event.strftime('' +
+					'<div class="time">%D  <span class="labels">días</span></div>' +
+					'<div class="time">%H  <span class="labels">horas</span></div>' +
+					'<div class="time">%M  <span class="labels">minutos</span></div>' +
+					'<div class="time">%S <span class="labels">segundos</span></div>'));
+			});
+			jQuery('[data-youtube]').youtube_background({
+				'play-button': false
+			});
+			
+		});
+		/*var myPlayer;
+        jQuery(function () {
+
+            var options = {
+                mobileFallbackImage: "http://www.hdwallpapers.in/walls/pink_cosmos_flowers-wide.jpg",
+                playOnlyIfVisible  : false
+            };
+
+            myPlayer = jQuery(".player").YTPlayer(options);
+        });*/
+	</script>
+</body>
+
+</html>
