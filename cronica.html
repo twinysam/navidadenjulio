@@ -30,7 +30,12 @@
 
   <body>
     <div class="everything">
-      <!--<a class="github" href="https://github.com/twinysam/" target="_blank"><img src="images/GitHub-Mark-Light-32px.png" alt="Github icon"></a>-->
+      <a
+        class="github"
+        href="https://github.com/twinysam/navidadenjulio"
+        target="_blank"
+        ><img src="images/GitHub-Mark-Light-32px.png" alt="Github icon"
+      /></a>
 
       <div class="container">
         <div class="cronicont">
@@ -60,8 +65,7 @@
       let eslaHora = function () {
         document.getElementById("clock").innerHTML = moment()
           .locale("es")
-          .format("hh:mm");
-        // moment().locale('es').format('DD/MM/YYYY, h:mm:ss a');
+          .format("HH:mm");
       };
       eslaHora();
       setInterval(eslaHora, 1000);
