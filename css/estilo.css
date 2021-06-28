@@ -122,6 +122,12 @@ span.labels {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 1925px) {
+  .container {
+    width: 1920px;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 100%;
