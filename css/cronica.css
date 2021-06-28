@@ -85,15 +85,24 @@ body {
 
 a,
 a:visited {
-  color: #fa4f83;
+  color: #fa4f58;
 }
 
 a:hover {
-  color: #ff6d99;
+  color: #ff6d80;
 }
 
 a:active {
-  color: #ffa0bc;
+  color: #ffa0a0;
+}
+
+a.boton {
+  display: block;
+  width: 150px;
+  height: 10px;
+  padding: 1%;
+  background-color: red;
+  color: white;
 }
 
 a.github {
