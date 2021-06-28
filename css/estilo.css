@@ -94,6 +94,7 @@ a.github {
   opacity: 0.25;
   border: none;
   text-decoration: none;
+  z-index: 100;
 }
 
 a.github:hover,
