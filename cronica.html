@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crónica - Navidad en Julio 2021!</title>
+    <meta name="author" content="Santiago Méndez" />
+    <link
+      rel="shortcut icon"
+      href="https://www.cronica.com.ar/__export/1502978210000/sites/cronica/arte/icons/favicon.ico"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cronica.css" />
+  </head>
+
+  <body>
+    <div class="everything">
+      <!--<a class="github" href="https://github.com/twinysam/" target="_blank"><img src="images/GitHub-Mark-Light-32px.png" alt="Github icon"></a>-->
+
+      <div class="container">
+        <div class="cronicont">
+          <div class="cronica"></div>
+          <div id="clock" class="croniclock"></div>
+        </div>
+
+        <div class="countdown">
+          <div id="faltan"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/moment-timezone-with-data.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script>
+      /*var timeFlies = setInterval(function() {
+            croniClock();
+        }, 1000);
+
+        function croniClock() {
+            var d = new Date();
+            document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+        }*/
+
+      let eslaHora = function () {
+        document.getElementById("clock").innerHTML = moment()
+          .locale("es")
+          .format("hh:mm");
+        // moment().locale('es').format('DD/MM/YYYY, h:mm:ss a');
+      };
+      eslaHora();
+      setInterval(eslaHora, 1000);
+
+      $(document).ready(function () {
+        var navidadJulio = moment.tz(
+          "2021-07-20 00:00:00",
+          "America/Argentina/Buenos_Aires"
+        );
+
+        $("#faltan").countdown(navidadJulio.toDate(), function (event) {
+          $(this).html(
+            event.strftime(
+              '<div class="time">Faltan %D días para navidad</div>'
+            )
+          );
+        });
+        jQuery("[data-youtube]").youtube_background({
+          "play-button": false,
+        });
+      });
+    </script>
+  </body>
+</html>
