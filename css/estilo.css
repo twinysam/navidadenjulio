@@ -71,10 +71,14 @@ a:active {
   color: #ffa0a0;
 }
 
+.botones {
+  display: flex;
+  justify-content: space-around;
+}
+
 a.boton,
 a.boton:visited {
-  display: block;
-  width: 25%;
+  flex: 1;
   padding: 1%;
   background-color: #bf0000;
   color: white;
@@ -85,6 +89,14 @@ a.boton:visited {
 
 a.boton:hover {
   background-color: #da0000;
+}
+
+a.boton.discord {
+  background-color: #596bad;
+}
+
+a.boton.discord:hover {
+  background-color: #677dce;
 }
 
 a.github {
