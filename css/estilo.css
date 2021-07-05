@@ -60,11 +60,11 @@ body {
 
 a,
 a:visited {
-  color: #fa4f58;
+  color: #ff5131;
 }
 
 a:hover {
-  color: #ff6d80;
+  color: #fd735b;
 }
 
 a:active {
@@ -76,11 +76,10 @@ a:active {
   justify-content: space-around;
 }
 
-a.boton,
-a.boton:visited {
+a.boton {
   flex: 1;
   padding: 1%;
-  background-color: #bf0000;
+  background-color: #d50000;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -88,19 +87,27 @@ a.boton:visited {
 }
 
 a.boton:hover {
-  background-color: #da0000;
+  background-color: #ff5131;
 }
 
 a.boton.discord {
-  background-color: #596bad;
+  background-color: #aa00ff;
 }
 
 a.boton.discord:hover {
-  background-color: #677dce;
+  background-color: #e254ff;
+}
+
+a.boton.peli {
+  background-color: #2962ff;
+}
+
+a.boton.peli:hover {
+  background-color: #768fff;
 }
 
 a.github {
-  position: absolute;
+  position: fixed;
   bottom: 1vw;
   right: 1vw;
   opacity: 0.25;
@@ -221,5 +228,15 @@ span.labels {
 
   span.labels {
     font-size: 4vw;
+  }
+
+  .botones {
+    display: block;
+  }
+
+  a.boton {
+    display: block;
+    flex: initial;
+    width: 100%;
   }
 }

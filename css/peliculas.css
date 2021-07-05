@@ -1,0 +1,206 @@
+body {
+  text-align: left;
+  margin-top: 50px;
+  overflow-y: scroll;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 200;
+}
+
+.container {
+  display: block;
+  width: 1366px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pelis {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.2rem;
+  margin-right: -1.2rem;
+}
+
+/*h1,
+h2 {
+  display: block;
+  width: 100%;
+}*/
+
+.pelis a {
+  display: block;
+  background-color: gray;
+  --size: 230px;
+  --aspect-ratio: 0.666666666;
+  width: var(--size);
+  height: calc(var(--size) / var(--aspect-ratio));
+  /*width: 230px;
+  height: 345px;*/
+  font-size: 0em;
+  text-decoration: none;
+  border: none;
+  background-size: cover;
+  margin: 1.2rem;
+}
+
+.pelis a.murray {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hJuDYdUnHtCBuQ9Ue8fen92Gf0e.jpg);
+}
+
+.pelis a.polar {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zCuq1sy3xwbJJytFttp2qItqdc8.jpg);
+}
+
+.pelis a.chronicles {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5Il2EMSF2KecrUKZPuen6BZmaCP.jpg);
+}
+
+.pelis a.chronicles2 {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6sG0kbEvAi3RRLcGGU5h8l3qAPa.jpg);
+}
+
+.pelis a.krampus {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dxnRNv9GL5tupUoVPE5lT2RdO9q.jpg);
+}
+
+.pelis a.holiday {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6fbqG49Q7IWBWdyJ7asNTcNbnG6.jpg);
+}
+
+.pelis a.klaus {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/q125RHUDgR4gjwh1QkfYuJLYkL.jpg);
+}
+
+.pelis a.grinch {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1WZbbPApEivA421gCOluuzMMKCk.jpg);
+}
+
+.pelis a.shrek {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kyCzpKpuF32nRl1QQgXqcQnnLAj.jpg);
+}
+
+/* otras pelis */
+
+.pelis a.home-alone {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9wSbe4CwObACCQvaUVhWQyLR5Vz.jpg);
+}
+
+.pelis a.home-alone-2 {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uuitWHpJwxD1wruFl2nZHIb4UGN.jpg);
+}
+
+.pelis a.love-actually {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7QPeVsr9rcFU9Gl90yg0gTOTpVv.jpg);
+}
+
+.pelis a.miracle {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sWjL1zD0XjQrOTP9jLiAbzvBKEW.jpg);
+}
+
+.pelis a.die-hard {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dLl1Ad7MvuSfEvrwsRgUOVjbfmT.jpg);
+}
+
+.pelis a.batman-returns {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg);
+}
+
+.pelis a.scrooged {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uO0znfB2ZzTXA1IS7jkrjNbpkYK.jpg);
+}
+
+.pelis a.gremlins {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/72Y1X9pMSjXQ7mKB6pBEoMhL0OQ.jpg);
+}
+
+.pelis a.wonderful {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bSqt9rhDZx1Q7UZ86dBPKdNomp2.jpg);
+}
+
+.pelis a.vacation {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/64NKasFKx6aOTKRg4mv76l0IwZR.jpg);
+}
+
+.pelis a.story {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qE5ZcJQA0tSG1KCiy4Fv0W91dS7.jpg);
+}
+
+.pelis a.muppet {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ssrV29QSVVJuemBHho0Qx7pFYak.jpg);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+
+  .pelis a {
+    --size: 200px;
+  }
+}
+
+@media (max-width: 1028px) {
+  .container {
+    width: 95%;
+  }
+
+  .pelis a {
+    --size: 185px;
+  }
+}
+
+@media (max-width: 730px) {
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .pelis a {
+    --size: 180px;
+  }
+}
+
+@media (max-width: 678px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .pelis a {
+    --size: 150px;
+  }
+}
+
+@media (max-width: 466px) {
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 401px) {
+  .pelis a {
+    --size: 125px;
+  }
+}
+
+@media (max-width: 354px) {
+  .pelis a {
+    --size: 34vw;
+  }
+}
+
+@media (max-width: 315px) {
+  .pelis a {
+    --size: 30vw;
+  }
+}
