@@ -85,6 +85,10 @@ h2 {
   background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kyCzpKpuF32nRl1QQgXqcQnnLAj.jpg);
 }
 
+.pelis a.tokyo {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ukhvxpVcBsb1MpRRwiqEIwyKdUX.jpg);
+}
+
 /* otras pelis */
 
 .pelis a.home-alone {
