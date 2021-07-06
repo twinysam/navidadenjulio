@@ -139,6 +139,10 @@ h2 {
   background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ssrV29QSVVJuemBHho0Qx7pFYak.jpg);
 }
 
+.pelis a.jingle {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lHLOUt0ZIQLC5asHdIQBoTUvaEp.jpg);
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px) {
