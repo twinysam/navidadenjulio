@@ -79,7 +79,7 @@
         $("#faltan").countdown(navidadJulio.toDate(), function (event) {
           $(this).html(
             event.strftime(
-              '<div class="time">Faltan %D días para navidad</div>'
+              '<div class="time">Faltan %-D días para navidad</div>'
             )
           );
         });
