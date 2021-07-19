@@ -133,6 +133,12 @@ a.github:active {
   font-size: 10vw;
 }
 
+#clock .xmas {
+  display: inline-block;
+  font-family: "Source Serif Pro", serif;
+  font-size: 10vw;
+}
+
 span.labels {
   display: block;
   font-size: 1.5vw;

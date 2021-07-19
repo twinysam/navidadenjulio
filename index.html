@@ -61,11 +61,11 @@
         </div>
       </div>
 
-      <div
+      <!--<div
         id="ytbg"
         data-ytbg-fade-in="true"
-        data-youtube="https://www.youtube.com/watch?v=dQEkIWoCjHI"
-      ></div>
+        data-youtube="https://www.youtube.com/watch?v=vI1NwsE3wK4"
+      ></div>-->
     </div>
     <script src="js/moment.min.js"></script>
     <script src="js/moment-timezone-with-data.min.js"></script>
@@ -73,7 +73,7 @@
     <script>
       $(document).ready(function () {
         var navidadJulio = moment.tz(
-          "2021-07-20 00:00:00",
+          "2021-07-19 13:30:00",
           "America/Argentina/Buenos_Aires"
         );
 
@@ -91,6 +91,21 @@
         jQuery("[data-youtube]").youtube_background({
           "play-button": false,
         });
+
+        // check if countdown is finished
+        setInterval(function () {
+          var now = moment();
+          const chequeando = [
+            navidadJulio.isSame(now, "day"),
+            navidadJulio.isSame(now, "hour"),
+            navidadJulio.isSame(now, "minute"),
+            navidadJulio.isSame(now, "second"),
+          ];
+          if (chequeando.indexOf(false) === -1) {
+            $("#clock").countdown("pause");
+            $("#clock").html('<div class="xmas">¡Navidad!</div>');
+          }
+        }, 1000);
       });
     </script>
   </body>
