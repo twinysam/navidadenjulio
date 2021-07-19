@@ -49,7 +49,7 @@
         ><img src="images/GitHub-Mark-Light-32px.png" alt="Github icon"
       /></a>
       <canvas id="c"></canvas>
-      <div class="overlay">
+      <div id="curtain" class="overlay">
         <div class="container">
           <div class="countdown">
             <p>
@@ -120,6 +120,7 @@
           if (chequeando.indexOf(false) === -1) {
             $("#clock").countdown("pause");
             $("#clock").html('<div class="xmas">¡Feliz Navidad!</div>');
+            $("#curtain").addClass("darker");
             var gl = c.getContext("webgl", { preserveDrawingBuffer: true }),
               w = (c.width = window.innerWidth),
               h = (c.height = window.innerHeight),
