@@ -1,0 +1,294 @@
+body {
+  text-align: left;
+  margin-top: 50px;
+  overflow-y: scroll;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 200;
+}
+
+.container {
+  display: block;
+  width: 1366px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.musica {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.2rem;
+  margin-right: -1.2rem;
+}
+
+/*h1,
+h2 {
+  display: block;
+  width: 100%;
+}*/
+
+.musica a {
+  display: block;
+  background-color: gray;
+  width: 230px;
+  height: 230px;
+  font-size: 0em;
+  text-decoration: none;
+  border: none;
+  background-size: cover;
+  margin: 1.2rem;
+}
+
+.musica a.luismi {
+  background-image: url(https://lh3.googleusercontent.com/8Yk0Qxmxfa4E5gcTKQ85tkQY4d3hVDGFXy5CFFWdpKJtLGk2CF9u5vukT2-WUzvhdAElgIlnbLGvtxVL=w544-h544-l90-rj);
+}
+
+.musica a.polar {
+  background-image: url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zCuq1sy3xwbJJytFttp2qItqdc8.jpg);
+}
+
+.musica a.robbiew {
+  background-image: url(https://lh3.googleusercontent.com/YslYg6RyuwkAZT-_riKRo2DY3CIoMonC8wAGEtMAWT7ABNhOComA3hGWI8UMEPBLCAw7VMOtv6IVR9hi=w544-h544-l90-rj);
+}
+
+.musica a.gwen {
+  background-image: url(https://lh3.googleusercontent.com/Wx00HOx44lF0laSFULzIIsx-0sWXbyjKm1Re7GcydJQjEQW9emvzpBrUdeltL2mZM4puFRLo1FIHeaNEZQ=w544-h544-l90-rj);
+}
+
+.musica a.clapton {
+  background-image: url(https://lh3.googleusercontent.com/fOvwLhA0H-lv011xWdx9IwPWMn53Zw0txGFhdBpyhDzfnQLNNzbZyKNa6GoaHZY0LfGH5kpdvCderCDW=w544-h544-l90-rj);
+}
+
+.musica a.seth {
+  background-image: url(https://lh3.googleusercontent.com/vk7D-QinhSlF7c8ENNgGWWxSW0fvNm1U2UeKqkER0u7XaCQbvbOBO2HVJTxfXiwwJmXUcaKx7cm5J8lR=w544-h544-l90-rj);
+}
+
+.musica a.paul {
+  background-image: url(https://lh3.googleusercontent.com/uLPYW-bpSn5ltDpfVsekB7ceDeaCCC_dMKXnaMyLJ--Il2b7dVThe7so9lAp11BenPJlD7zMjnYcqu0=w544-h544-l90-rj);
+}
+
+.musica a.spector {
+  background-image: url(https://lh3.googleusercontent.com/mSHrVPmZx6f2MMrPRpxDP0ao8ZdIvBdvj8NC4sL7gZIQSf5kOwL7wVtzw7_tIJOarBmNNbqrnjBBiLo=w544-h544-s-l90-rj);
+}
+
+.musica a.charlie {
+  background-image: url(https://lh3.googleusercontent.com/YX7e5O8XBNOAAEU1gbaXMmbUzpOSruRyB-3ZvODXNBa2ppJlue8IGCjk8iZqJQbSsuR0Ui7YxqICGrw=w544-h544-l90-rj);
+}
+
+.musica a.sinatra {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/71wHo9OAFML._SL1050_.jpg);
+}
+
+.musica a.ella {
+  background-image: url(https://lh3.googleusercontent.com/EMkXwrJk4Ld17wILjqVuouikdScOyySBAFXOKUKpYZFxIyoI5bJCs7LCD7ykmcvtMi5nBkfJ_lukPpwy=w544-h544-l90-rj);
+}
+
+.musica a.veryshehim {
+  background-image: url(https://lh3.googleusercontent.com/uzeSgwf8cXx01jx75VQUrCdp2PzeXxKxuAZx_S8WDdZ22SRzPipfwRPlfxe-XB1dff6nSS0H0PIdYu4=w544-h544-l90-rj);
+}
+
+.musica a.partyshehim {
+  background-image: url(https://lh3.googleusercontent.com/R02kYvkNg_up7PIoyZaDPyu7TT2c5jS0bU0Lzmnl_YAhEu5Er8_AmlijupLFgs-lRBKtGgG2l7eLHYzp=w544-h544-l90-rj);
+}
+
+.musica a.chilly {
+  background-image: url(https://lh3.googleusercontent.com/fmb9TXr3j9y-dct-zGq7NJB6lcnDNCeWpS_OnoM-RsREm-MGFm_h6K1Fls-DbKpwkl5t7jvgmFhKces=w544-h544-l90-rj);
+}
+
+.musica a.elvis {
+  background-image: url(https://lh3.googleusercontent.com/2ZEF90I_WSCbfEB5RguXBk_Pu2kPjNUhHEyyh_QX59VnQo6t2QmGWv_kfO0g4SLlnlAA8I34QLh3qV_mGg=w544-h544-l90-rj);
+}
+
+.musica a.sia {
+  background-image: url(https://lh3.googleusercontent.com/WwQs4AFciWYZ5UqWbAz7_LE2PuM6N7129RL4NoZsPfaU1fH6TWpCPFbFlrJPl7DqqfizFc4ME-d8rEQ=w544-h544-l90-rj);
+}
+
+.musica a.masterworks {
+  background-image: url(https://lh3.googleusercontent.com/yEDYuQMOcnODHf7F8a5u702WHfa1mN5zoUp-yiMnkcUfeuzYOoyfwrN31VhuZvnw5NEhHSfZ4r5XwSdn=w544-h544-l90-rj);
+}
+
+.musica a.ceelo {
+  background-image: url(https://lh3.googleusercontent.com/2Op0voKwn_TcalXQ2MDqVFJUc1wZcr6DZvxhzP3JtNmP6h0mku7JR12ZOkrAdupFTfEPwxtZQeRg6Tsp=w544-h544-l90-rj);
+}
+
+.musica a.taylor {
+  background-image: url(https://lh3.googleusercontent.com/K-4ddgu24QQ4gluypAQ34IY5OhqkbOgY6N3VnI8hLa72ZB-meFUKaiWXuTTjXmdpW25fTEMU1od3uqRY=w544-h544-l90-rj);
+}
+
+.musica a.dylan {
+  background-image: url(https://lh3.googleusercontent.com/KHxWvEjcJoIfrFXbUmh3kZRKQhhPJuIZe1Yjzbbi1jUKOYfxBRvOO6s6M2tdY8v0_FY4ehl5VLKsUIg9=w544-h544-l90-rj);
+}
+
+.musica a.legend {
+  background-image: url(https://lh3.googleusercontent.com/bJhhuE1sNrg9yjYlsj_vy04Ue2MboAkIJMlaRwnKgjFkDEskRi41I5MNkyH6KywS7v4BZkOLMCHBKug=w544-h544-l90-rj);
+}
+
+.musica a.barbra {
+  background-image: url(https://lh3.googleusercontent.com/FAUXkZSACzJTbLTUSmQG9ZzHre6M6gT1YTeE3YPnuuXAIZj5TFPHh01MoDD0mr_0eBOA_ZfiojDZy-c=w544-h544-l90-rj);
+}
+
+.musica a.bbking {
+  background-image: url(https://lh3.googleusercontent.com/2aKdAguwo9ODiRLa8JJUwms_xqnZHmJuPYzjHK39an3VuPUyH4KBm7cnyVAXOsVoEV8yfd4pKhSd1zI0sA=w544-h544-s-l90-rj);
+}
+
+.musica a.gift {
+  background-image: url(https://lh3.googleusercontent.com/ok172M3i3PaLM31MyZm-ShN4F3CswooyG2cxLTsOpfWb4aQL1zokjdQ5txpAPBMORbv3YCRkZ63g3PMr=w544-h544-l90-rj);
+}
+
+.musica a.brown {
+  background-image: url(https://lh3.googleusercontent.com/cJTktqgdp9AO1usFrMktZMvjG7rvO2D01uzIvnIWCD5V_xFXvpi-05Uzj9NMVyvQjISiEFh__g9X6oUN=w544-h544-l90-rj);
+}
+.musica a.soul {
+  background-image: url(https://lh3.googleusercontent.com/ApRQkJCjoF9gB8B7dAiglRh6550Rhudwir2quI1h83ealbMqErJODrYaCPZ_TINFy-17oDKU6p9cjKta=w544-h544-l90-rj);
+}
+.musica a.record {
+  background-image: url(https://lh3.googleusercontent.com/TQRNFzlCbSUsH2devQT9dGZBtQUoISUnh_SgF6LDolqJ_Zx9D9wrLCrhb7V58NJ6IfeduKqFXl5uIL58=w544-h544-l90-rj);
+}
+.musica a.mancini {
+  background-image: url(https://lh3.googleusercontent.com/TiB-Rz0uq49QZSBAvKtw_kH4aBImnZSFhxy9mNKd0XdE0OYsujebzbED-MzCNeJucacbUfiGYNWsAn7Y=w544-h544-s-l90-rj);
+}
+.musica a.blake {
+  background-image: url(https://lh3.googleusercontent.com/Cuker1PfiANHZkCHFKQeDTDXZmjnWVA_3c6ITXC606pXPWkoGAgCS4NL4-sFbR6b57K_AuEhNQ0wDG2-TA=w544-h544-l90-rj);
+}
+.musica a.jethro {
+  background-image: url(https://lh3.googleusercontent.com/7TBvs7uXgDbM_79Ak9QbTHeomVwhw0h4u5CDitGbtakvY4CsecwqZCk7IEVj4dKEmzBac7pHiyJtKUM=w544-h544-l90-rj);
+}
+.musica a.dogghouse {
+  background-image: url(https://lh3.googleusercontent.com/KtNOfhpKnd4k8ntt7As4leRWfE4166GqJW4Vr79fgarF2CdMjjZZNjXxlSTQ2oCkpiw5WpCkz7b3Efo5=w544-h544-l90-rj);
+}
+.musica a.vienna {
+  background-image: url(https://lh3.googleusercontent.com/AsXmqd3UBb_f-0mtK57_RIfoOiKjLygQB5g_aVYNHcHzvXk1XQOZZCJT2th1uqX2spwgk9I_HYsp7eU=w544-h544-s-l90-rj);
+}
+.musica a.bootsy {
+  background-image: url(https://lh3.googleusercontent.com/6eCKnomyPeok_Qt2Ep1GDOsbL9wEp181L8_hmCG42YOlhPYag3azAp7vzeAWqCRSI0pjVa8zSQ-c0vq_=w544-h544-l90-rj);
+}
+.musica a.death {
+  background-image: url(https://lh3.googleusercontent.com/4iBqE4Cjtq5TN7Ua27RQ0TBqs1krhVtoJ_K0EDnPKLLeN3DiKvIZixXj4EuFCjHid_hCctq5vxrMMQ_-=w544-h544-l90-rj);
+}
+.musica a.weezer {
+  background-image: url(https://lh3.googleusercontent.com/JGUZrbJMv2vw3bGbDgha7u1gVOs9bq3ERhzfXmJP98tL83OpOLEwtwVwawgZwyCwa03mJ8uLi4q-3snI=w544-h544-l90-rj);
+}
+.musica a.hung {
+  background-image: url(https://lh3.googleusercontent.com/aJhL0Dwn1De7sHhHSkk8Vsl7gAHKyKd3u_7DQEHUdBXqud-9DMiguKh5DJYsgk41CCm7bj1QzZTnrVBkGg=w544-h544-l90-rj);
+}
+.musica a.mariah {
+  background-image: url(https://lh3.googleusercontent.com/p2KexwmjEYAxWpU8YDL5ZO-BcH1Qnr51nznrX04W-5a16aKWCAwCaEgzwP7cMrCjJhmlJvuxilrCXU0=w544-h544-l90-rj);
+}
+.musica a.boys {
+  background-image: url(https://lh3.googleusercontent.com/ZrwAMzhxTFb5bt6dwLJPtomIIl9AvBU6pJ4fC1USm6rFDfDR1VyvXxNnjKjiGaLGOrPNbhhw2nbT12ljHA=w544-h544-l90-rj);
+}
+.musica a.newkids {
+  background-image: url(https://lh3.googleusercontent.com/bat9aD-X5QDOxL0GTp7RXOaYC-bK6ztRLd68kroOiyPxPruNoq9mvr0_kcbXAKVN6Vt95lu60VoKkxkU=w544-h544-l90-rj);
+}
+.musica a.sugar {
+  background-image: url(https://lh3.googleusercontent.com/ATDMesIw824TQo60oM1aEVMhG9GJkShNShQpL5Xb3yftKB_5rOpGXa9HhcTlxYZWD9Xg4IrMZInNOUI=w544-h544-l90-rj);
+}
+.musica a.nutcracker {
+  background-image: url(https://lh3.googleusercontent.com/oR1LcFvBmUhAgTSwVHtHxmxUBRKpcsvnUHOg7NgMp7hcwbB1ZjMlmBxW742HFDCj3dZQ-vnwvB4UF37p6Q=w544-h544-l90-rj);
+}
+.musica a.beachboys {
+  background-image: url(https://lh3.googleusercontent.com/VZ4AKfI_oUwHmfhUR9iS69FVIirnyqM2vg9_gZtaSdsC6Mv0PBd1ihz1nMzEOo4Rh6STMaeVCgUcpWp6=w544-h544-l90-rj);
+}
+.musica a.berliner {
+  background-image: url(https://lh3.googleusercontent.com/BPoqesbAUAV015oCnwIq38wUOmQi2WLoshJ-mDOLozu2dZccQt1TCQsQlvNuir8VSndnq6fWUtdF0hY5=w544-h544-l90-rj);
+}
+.musica a.nat {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/51xG-isCZZL.jpg);
+}
+.musica a.cash {
+  background-image: url(https://lh3.googleusercontent.com/1YkeMjRMQpQ3wTuTdjUY5GB0ca8v_xFlPfqMkejYcNlOKC1FQC6V0LUKJVkJDPTBq7tYMVvHrxrmOtWA=w544-h544-l90-rj);
+}
+.musica a.ventures {
+  background-image: url(https://lh3.googleusercontent.com/Hs7_M4BFrQ9ANpic4hs9VtOLGGPlsG0HJvMjIqxy6275LebDe2XpAX1g1vIOD3RH8t1ULpXVP9Sd4udv=w544-h544-l90-rj);
+}
+.musica a.bing {
+  background-image: url(https://lh3.googleusercontent.com/dbKvTgMGOLm9Loul3uCWeluWLFoVx_cW5jlOLboy0Kv6kdFzGEnjM9nNzlSuu8q3je8qICde14arfB2C=w544-h544-s-l90-rj);
+}
+.musica a.louis {
+  background-image: url(https://i.scdn.co/image/ab67616d0000b2730fa54132906ce47f5bf14da6);
+}
+.musica a.oscar {
+  background-image: url(https://lh3.googleusercontent.com/0-OoFmOughbVHTploExhddk04-e3JB5RlC1ejWzTiuZWafsSaoXpkqxQYAxOHvooThVTkF1In-WPVMpO=w544-h544-l90-rj);
+}
+.musica a.css {
+  background-image: url();
+}
+.musica a.css {
+  background-image: url();
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+
+  .musica a {
+    --size: 200px;
+  }
+}
+
+@media (max-width: 1028px) {
+  .container {
+    width: 95%;
+  }
+
+  .musica a {
+    --size: 185px;
+  }
+}
+
+@media (max-width: 730px) {
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .musica a {
+    --size: 180px;
+  }
+}
+
+@media (max-width: 678px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .musica a {
+    --size: 150px;
+  }
+}
+
+@media (max-width: 466px) {
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 401px) {
+  .musica a {
+    --size: 125px;
+  }
+}
+
+@media (max-width: 354px) {
+  .musica a {
+    --size: 34vw;
+  }
+}
+
+@media (max-width: 315px) {
+  .musica a {
+    --size: 30vw;
+  }
+}
