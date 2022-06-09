@@ -72,14 +72,14 @@
 
       $(document).ready(function () {
         var navidadJulio = moment.tz(
-          "2021-07-20 00:00:00",
+          "2022-07-30 00:00:00",
           "America/Argentina/Buenos_Aires"
         );
 
         $("#faltan").countdown(navidadJulio.toDate(), function (event) {
           $(this).html(
             event.strftime(
-              '<div class="time">Faltan %-H horas para navidad</div>'
+              '<div class="time">Faltan %-D días para navidad</div>'
             )
           );
         });
