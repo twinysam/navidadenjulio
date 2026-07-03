@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -80,7 +80,7 @@
       <div
         id="ytbg"
         data-ytbg-fade-in="true"
-        data-youtube="https://www.youtube.com/watch?v=fB7OFiCLpQc"
+        data-youtube="https://www.youtube.com/watch?v=2r-EhcedduQ"
       ></div>
     </div>
     <script src="js/moment.min.js"></script>
@@ -90,7 +90,7 @@
       $(document).ready(function () {
         var navidadJulio = moment.tz(
           "2026-07-19 00:00:00",
-          "America/Argentina/Buenos_Aires"
+          "America/Argentina/Buenos_Aires",
         );
 
         $("#clock").countdown(navidadJulio.toDate(), function (event) {
@@ -100,8 +100,8 @@
                 '<div class="time">%D  <span class="labels">días</span></div>' +
                 '<div class="time">%H  <span class="labels">horas</span></div>' +
                 '<div class="time">%M  <span class="labels">minutos</span></div>' +
-                '<div class="time">%S <span class="labels">segundos</span></div>'
-            )
+                '<div class="time">%S <span class="labels">segundos</span></div>',
+            ),
           );
         });
         jQuery("[data-youtube]").youtube_background({
@@ -194,7 +194,7 @@ void main(){
 
             webgl.dataAttribLoc = gl.getAttribLocation(
               webgl.shaderProgram,
-              "a_data"
+              "a_data",
             );
             webgl.dataBuffer = gl.createBuffer();
 
@@ -206,16 +206,16 @@ void main(){
               gl.FLOAT,
               false,
               0,
-              0
+              0,
             );
 
             webgl.resUniformLoc = gl.getUniformLocation(
               webgl.shaderProgram,
-              "u_res"
+              "u_res",
             );
             webgl.modeUniformLoc = gl.getUniformLocation(
               webgl.shaderProgram,
-              "u_mode"
+              "u_mode",
             );
 
             gl.viewport(0, 0, w, h);
@@ -265,7 +265,7 @@ void main(){
               gl.bufferData(
                 gl.ARRAY_BUFFER,
                 new Float32Array(webgl.data),
-                gl.STATIC_DRAW
+                gl.STATIC_DRAW,
               );
               gl.drawArrays(glType, 0, webgl.data.length / 4);
             };
@@ -323,7 +323,7 @@ void main(){
                   this.x,
                   this.y,
                   this.hue,
-                  opts.projectileAlpha * 0.2
+                  opts.projectileAlpha * 0.2,
                 );
 
                 if (this.vy >= opts.lowVelBoundary) {
@@ -396,7 +396,7 @@ void main(){
                 this.x,
                 this.y,
                 this.parent.hue,
-                opts.projectileAlpha / this.tick
+                opts.projectileAlpha / this.tick,
               );
 
               if (this.y > h) this.dead = true;
